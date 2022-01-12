@@ -75,6 +75,16 @@ conter()
 function conter(){
 	score.innerHTML = `Score:${sCounter}`
 	fail.innerHTML = `Fails:${fCounter}`
+	setTimeout(()=>{
+		if (sCounter >= 3) {
+		alert("You win")
+		location.reload();
+	}else if (fCounter >= 3) {
+		alert("you loose")
+		location.reload();
+	}
+},1100)
+	
 }
 
 
